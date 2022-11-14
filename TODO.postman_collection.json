@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "5e40b48b-1eb8-46a8-81a5-4672f606ce91",
+		"name": "TODO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14817593"
+	},
+	"item": [
+		{
+			"name": "save-todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Meeting 2\",\n    \"done\": false,\n    \"author\": \"Amro\",\n    \"description\": \"description\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://9gyqk52uc0.execute-api.eu-west-2.amazonaws.com/prod/todo",
+					"protocol": "https",
+					"host": [
+						"9gyqk52uc0",
+						"execute-api",
+						"eu-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"945e8408-3a47-4dd8-9549-dc0624b325de\",\n    \"done\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://9gyqk52uc0.execute-api.eu-west-2.amazonaws.com/prod/todo",
+					"protocol": "https",
+					"host": [
+						"9gyqk52uc0",
+						"execute-api",
+						"eu-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://9gyqk52uc0.execute-api.eu-west-2.amazonaws.com/prod/todo/bcf001d0-448c-42d3-bfc4-9452933d9a62",
+					"protocol": "https",
+					"host": [
+						"9gyqk52uc0",
+						"execute-api",
+						"eu-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"todo",
+						"bcf001d0-448c-42d3-bfc4-9452933d9a62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://9gyqk52uc0.execute-api.eu-west-2.amazonaws.com/prod/todo?author=Amro",
+					"protocol": "https",
+					"host": [
+						"9gyqk52uc0",
+						"execute-api",
+						"eu-west-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"todo"
+					],
+					"query": [
+						{
+							"key": "author",
+							"value": "Amro"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
