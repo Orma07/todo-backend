@@ -16,6 +16,8 @@ I decided to use it cause it allows me tu use node to write code and deploy it t
   - PATCH /todo bound to update handler
   - DELETE /{todo-id} bound to delete handler\
 as you can notice each handler perform a call to specific method of TodoDataSource where all the logic is implemented also the structure of the responses of our backend
+- lib -> lambda -> test: contains the backend tests
+
 
 In the project you can find also TODO.postman_collection.json a collection to perform the CRUD operation for our TODO
   
